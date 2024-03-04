@@ -1,0 +1,69 @@
+@charset "uft 8";
+
+body{
+  
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 30px;
+  font-style: normal;
+  color:purple;
+  background-image: url(https://thumbs.dreamstime.com/b/papel-de-parede-da-gal%C3%A1xia-espacial-nebula-arte-c%C3%B3smica-com-nebulosa-gerativo-ai-270666056.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    
+
+
+.card{
+text-align: center;
+background-image: url(https://img.freepik.com/fotos-gratis/galaxia-espiral-realista-com-ia-geradora-de-estrelas_169016-29327.jpg?size=626&ext=jpg&ga=GA1.1.1222169770.1701648000&semt=ais);
+width: 20%;
+height: 300px;
+border-radius: 10%;
+box-shadow: 10px 5px 5px black;
+
+}
+
+div{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.label{
+  padding: 10px;
+  font-size: 25px;
+}
+
+.altura{
+    padding: 18px;
+    font-size: 30px;
+}
+
+.button{
+    box-shadow: 10px 5px 5px black;
+    border-radius: 10px;
+    color: purple;
+    font-size: 15px;
+    transform: scale(0.9);
+}
+
+.titulo{
+    text-align: center;
+    background-image: url(https://img.freepik.com/fotos-gratis/galaxia-espiral-realista-com-ia-geradora-de-estrelas_169016-29327.jpg?size=626&ext=jpg&ga=GA1.1.1222169770.1701648000&semt=ais);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10%;
+    box-shadow: 10px 5px 5px black;
+    ;
+}
+
+.final{
+    background-image: url(https://img.freepik.com/fotos-gratis/galaxia-espiral-realista-com-ia-geradora-de-estrelas_169016-29327.jpg?size=626&ext=jpg&ga=GA1.1.1222169770.1701648000&semt=ais);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10%;
+    box-shadow: 10px 5px 5px black;
+    padding: 2%;
+    transform: translateY(80%);
+}

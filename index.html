@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+
+<body>
+
+    <h1 class="titulo">IMC - Indice de Massa Corporal</h1>
+    <div>
+        <form action="" class="card">
+            <label for="" class="altura">Altura:</label>
+            <input type="number" name="" id="altura">
+            <br>
+
+            <label for="peso" class="label">Peso (Kg)</label>
+            <input type="number" name="" id="peso" maxlength="5">
+            <br>
+
+            <button onclick="calcularImc()" class="button">Calcular IMC</button>
+
+            <p>Seu indice de massa corporal é: <span id="resultado"></span><span id="severino"></span></p>
+    </div>
+    </form>
+
+    <script>
+        function calcularImc() {
+            const peso = document.getElementById('peso').value;
+            const altura = document.getElementById('altura').value;
+            const imc = peso / (altura ** 2);
+            document.getElementById('resultado').textContent = imc.toFixed(2);
+
+            if (imc < 18.5) {
+                document.getElementById("severino").textContent = "abaixo do peso ideal";
+            } else if (imc < 25.9) {
+                document.getElementById("severino").textContent = "peso ideal";
+            } else if (imc < 30.0) {
+                document.getElementById("severino").textContent = "sobrepeso";
+            } else if (imc < 35.0) {
+                document.getElementById("severino").textContent = "obesidade grau 2";
+            }
+
+        }
+    </script>
+
+    <footer class="final">
+        <p>Desenvolvido por Gabriel v mendes &cap;</p>
+    </footer>
+
+</body>
+
+</html>
